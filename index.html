@@ -20,8 +20,30 @@
 
     <div class="container">
         <div class="card quiz-card">
-            <img src="./img/pencil.jpg" class="card-img-top">
-            <div class="card-body">
+            <div class="left-side">
+                <img src="./img/logo.png" alt="">
+
+                <div class="categories">
+                    HTML <br>
+                    <br>
+                    CSS <br>
+                    <br>
+                    JS <br>
+                    <br>
+                    Java
+                </div>
+            </div>
+            
+            <div class="card-body end-screen" id="endScreen" style="display: none;">
+                <div><img src="./img/brain result.png" alt=""></div>
+                <div><b>COMPLETE <br> HTML QUIZ!</b> 
+                </div>
+                <div><b style="color: orange;">YOUR SCORE</b> <b id="amount-of-right-questions"></b>/<b id="amount-of-questions"></b></div>
+                <button class="btn btn-primary">SHARE</button>
+                <div><a href=index.html style="cursor: pointer;">REPLAY</a></div>
+            </div>
+            
+            <div class="card-body background-color" id="questionBody">
               <h5 class="card-title" id="questiontext">Frage</h5>
 
                 <div class="card quiz-answer-card mb-2" onclick="answer('answer_1')">
@@ -50,15 +72,13 @@
 
                 <div class="question-footer">
                     <span>
-                        <b>1</b> von <b id="all-questions"></b> Fragen 
+                        <b id="question-number">1</b> von <b id="all-questions"></b> Fragen 
                     </span>
 
-
-                    <button class="btn btn-primary">Nächste Frage</button>
+                    <button onclick="nextQuestion()" class="btn btn-primary" id="next-button" disabled>Nächste Frage</button>
                 </div>
             </div>
         </div>   
-    </div>
-      
+    </div>   
 </body>
 </html>

@@ -1,9 +1,13 @@
 body {
-    background-color: rgba(39,53,92,255) !important;
+    background-color: rgba(254,250,239,255) !important;
+}
+
+button {
+    cursor: pointer;
 }
 
 .container {
-    background-color: rgba(39,53,92,255) !important;
+    background-color: rgba(254,250,239,255) !important;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -30,3 +34,77 @@ body {
 .bg-success, .bg-danger {
     color: white !important;
 }
+
+.card {
+    flex-direction: unset !important;
+}
+
+.left-side {
+    background-color: rgba(39,53,92,255) !important;
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-side img {
+    height: 50px;
+    width: 60px;
+    text-align: center !important;
+    margin-top: 10px;
+}
+
+.categories {
+    margin-top: 60px;
+}
+
+.end-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.end-screen img {
+    height: 80px;
+}
+
+.background-color {
+    background-color: rgba(247,247,247,255);
+}
+
+.letter {
+    border-style: solid 1px;
+    padding: 10px;
+    background-color: lightgray;
+    margin-right: 40px;
+}
+
+.quiz-card {
+    width: 40rem;
+}
+
+@media(max-width: 770px) {
+    .letter {
+        margin-right: 30px;
+    }
+}
+
+@media(max-width: 550px) {
+    .left-side {
+        display: none;
+    }
+}
+
+@media(max-width: 425px) {
+    .letter {
+        margin-right: 10px;
+    }
+
+    .card-body {
+        font-size: 11px;
+    }
+}
+
+
